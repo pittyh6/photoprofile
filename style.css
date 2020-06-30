@@ -1,0 +1,417 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+/* var */
+
+:root {
+    --main-letter-pink-color: #ef7998;
+    --main-bg-black-color: black;
+    --main-border-blue-color: rgba(8, 158, 228, 0.575);
+    --main-content-gray-color: rgb(224, 222, 222);
+}
+
+
+/* text */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li {
+    font-family: "Kaushan Script", cursive;
+}
+
+h1 {
+    color: aliceblue;
+}
+
+h2 {
+    font-size: 2.5rem !important;
+    margin-bottom: 3% !important;
+}
+
+h4 {
+    font-size: 1.2rem !important;
+}
+
+p {
+    margin-bottom: 7% !important;
+}
+
+li {
+    font-size: 1.5rem;
+    color: var(--main-letter-pink-color);
+}
+
+.banner-title {
+    color: var(--main-letter-pink-color);
+    font-size: 60px;
+}
+
+.container-fluid {
+    height: 100vh;
+    padding: 0px !important;
+}
+
+
+/* navbar */
+
+.row {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.863);
+    position: absolute;
+}
+
+.img-logo {
+    width: 20%;
+    margin-left: 5%;
+}
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.pink-letter {
+    text-decoration: none !important;
+    color: var(--main-letter-pink-color) !important;
+}
+
+a:hover {
+    color: var(--main-bg-black-color) !important;
+    transition: 0.8s;
+}
+
+.links li {
+    display: inline;
+    position: relative;
+    top: 7px;
+    padding: 0 15px;
+}
+
+.text-nav {
+    position: relative !important;
+    text-transform: capitalize;
+    top: -55% !important;
+}
+
+.img-phone img {
+    width: 15%;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.img-phone {
+    left: 130px;
+    top: 15px;
+}
+
+.text-phone {
+    top: 8px;
+    left: 100%;
+}
+
+.col-sm-6 {
+    flex: none !important;
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.img-nav {
+    border: 2px solid black !important;
+    height: 50px;
+    padding-left: 40px !important;
+    width: 200%;
+}
+
+.img-nav:hover {
+    background-color: var(--main-letter-pink-color);
+    border: 2px solid var(--main-letter-pink-color) !important;
+}
+
+.img-cart {
+    left: -85px;
+    top: 6px;
+}
+
+.icon-cart {
+    width: 20%;
+}
+
+.col-md-6 {
+    max-width: 100% !important;
+}
+
+
+/* scrool welcome */
+
+.bg-contain {
+    background-image: url(img/IMG_4086-Edit.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.9;
+    height: 900px;
+}
+
+.welcome {
+    text-align: center;
+    height: 50vh;
+}
+
+.text-capitalize {
+    position: relative;
+    top: 50%;
+}
+
+.banner-link {
+    border: 2px solid black !important;
+    color: var(--main-bg-black-color) !important;
+    font-size: 30px !important;
+}
+
+.banner-link:hover {
+    background-color: var(--main-bg-black-color);
+    color: var(--main-letter-pink-color) !important;
+}
+
+
+/* ABOUT */
+
+.bout {
+    height: 85% !important;
+}
+
+.btn-body {
+    font-size: 15px !important;
+}
+
+.btn,
+.text-img-body {
+    text-transform: uppercase !important;
+}
+
+.about {
+    width: 45%;
+}
+
+.text-about {
+    position: relative;
+    left: 45%;
+    top: 230px;
+    width: 50% !important;
+}
+
+.photo-about {
+    width: 100%;
+}
+
+.img-about {
+    padding: 0 !important;
+    position: relative;
+    left: 122%;
+    top: -90px;
+    width: 45% !important;
+}
+
+.about-img__container {
+    position: relative;
+}
+
+.about-img__container::before {
+    content: "";
+    position: absolute;
+    top: -1.5rem;
+    left: -1.7rem;
+    width: 100%;
+    height: 100%;
+    outline: 0.5rem solid var(--main-border-blue-color);
+    z-index: -1;
+    transition: all 1s ease-in-out;
+}
+
+.about-img__container:hover:before {
+    top: 0;
+    left: 0;
+}
+
+
+/* CONTENT */
+
+.content {
+    background-color: var(--main-content-gray-color);
+    text-align: center;
+    height: auto;
+}
+
+
+/* top part */
+
+.col-bunner-title {
+    margin-top: 2%;
+}
+
+.input-group-text {
+    background-color: var(--main-letter-pink-color) !important;
+    left: 123px;
+    position: relative;
+    width: 30%;
+}
+
+.links-top-body-content {
+    margin-bottom: 2%;
+}
+
+.links-top-body-content a {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.search-top-body-content {
+    left: 30%;
+    width: 33% !important;
+}
+
+.img-search {
+    width: 80%;
+}
+
+.form-control::placeholder {
+    font-family: "Kaushan Script", cursive;
+    opacity: 0.8;
+}
+
+
+/* img body part */
+
+.img-content-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.store_itens {
+    background-color: #fff;
+    width: 280px;
+    margin: 10px 5px;
+    display: inline-grid;
+}
+
+.img-container {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.img-content-itens {
+    width: 280px;
+    height: 190px;
+    transition: all 1s ease-in-out;
+}
+
+.img-container:hover .img-content-itens {
+    transform: scale(1.2);
+}
+
+.card-body {
+    max-height: 70px;
+}
+
+#store-item-name {
+    width: 50%;
+}
+
+#store-item-value {
+    text-align: right;
+    right: 15px;
+    top: -35px;
+    position: relative;
+}
+
+#store-item-value strong {
+    font-size: 25px !important;
+}
+
+
+/* lightbox modal */
+
+#lightbox {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+#lightbox.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+}
+
+
+/* mobile */
+
+@media (max-width: 1300px) {
+    .img-phone {
+        left: 20px;
+    }
+    .text-phone {
+        left: 49px;
+    }
+}
+
+@media (max-width: 935px) {
+    .links {
+        left: -190px;
+        position: relative;
+    }
+    .links li {
+        padding: 0 5px;
+    }
+    .phone {
+        width: 20%;
+    }
+    .img-phone {
+        left: -180px;
+    }
+    .text-phone {
+        left: -155px;
+    }
+    .img-nav {
+        height: 47px;
+        padding-left: 20px !important;
+        width: 150%;
+    }
+}
+
+@media (max-width: 800px) {
+    .content {
+        height: 2000px;
+    }
+}
+
+
+/* mobile */
+
+@media (max-width: 450px) {
+    .content {
+        height: 3650px;
+    }
+}

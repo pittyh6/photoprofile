@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pitty's Photo Profile</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- fontawesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- HEADER -->
+        <header>
+            <!-- navbar -->
+            <nav class="navbar navbar-light">
+                <div class="logo">
+                    <a class="navbar-brand" href="#">
+                        <img class="img-logo" id="img-logo" src="img/avateOculos5.png" alt="logo-img" />
+                    </a>
+                </div>
+
+                <div class="links">
+                    <ul>
+                        <li><a href="index.html" class="pink-letter">Home</a></li>
+                        <li><a href="#about" class="pink-letter">About</a></li>
+                        <li><a href="#content-store" class="pink-letter">Store</a></li>
+                    </ul>
+                </div>
+
+                <div class="phone">
+                    <div class="row row-phone">
+                        <div class="col-sm-6 img-phone">
+                            <img src="https://img.icons8.com/ios-filled/50/000000/ringing-phone.png" />
+                        </div>
+                        <div class="col-sm-6 text-phone">
+                            <h4 class="text-nav">+ 123 456 789</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart">
+                    <div class="row">
+                        <!-- <a href="#store" class="fa fa-cart-plus btn btn-nav img-cart img-nav"> -->
+                        <a href="#store" class="btn btn-nav img-cart img-nav">
+                            <div class="col-md-6 img-cart">
+                                <img src="https://img.icons8.com/material-outlined/50/000000/favorite-cart.png" class="icon-cart" />
+                            </div>
+                            <div class="col-md-6 text-nav">
+                                <h4 class="text-cart">2 Itens - $10.00</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <!-- end navbar -->
+            <div class="container-fluid bg-contain bg-contain-text">
+                <div class="row">
+                    <div class="col-12 welcome">
+                        <div class="text-capitalize">
+                            <h1 class="text-capitalized">
+                                welcome to
+                                <strong class="banner-title"> pitty's</strong>
+                            </h1>
+                            <a href="#content-store" class="btn banner-link">explore</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- END HEADER -->
+
+        <!-- ABOUT -->
+        <div class="container-fluid bout" id="about">
+            <div class="about">
+                <div class="col-md-6 text-about about">
+                    <h2 class="txt-black">
+                        About
+                        <strong class="banner-title">Us</strong>
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, aliquam voluptas beatae vitae expedita consectetur nesciunt quia deserunt asperiores facere fuga dicta fugiat corrupti et omnis porro at dolorum! Ad!
+                    </p>
+                    <a href="#content-store" class="btn banner-link btn-body">explore</a>
+                </div>
+                <div class="col-md-6 img-about about">
+                    <div class="about-img__container">
+                        <img src="img/eu-155-Edit-Edit.jpg" alt="phot about me" class="photo-about" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END ABOUT -->
+
+        <!-- CONTENT -->
+        <div class="container-fluid content" id="content-store">
+            <!-- TOP PART -->
+            <div class="top-content">
+                <div class="row top-body-content">
+                    <div class="col-md-12 col-bunner-title">
+                        <h2>Our <strong class="banner-title">Store</strong></h2>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="links-top-body-content">
+                            <a class="btn banner-link btn-body btn-all" onclick="chooseByButton()">all</a>
+                            <a class="btn banner-link btn-body btn-street" onclick="chooseByButton()">street</a>
+                            <a class="btn banner-link btn-body btn-nature" onclick="chooseByButton()">nature</a>
+                            <a class="btn banner-link btn-body btn-portrait" onclick="chooseByButton()">portrait</a>
+                            <a class="btn banner-link btn-body btn-events" onclick="chooseByButton()">events</a>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-search-content">
+                        <div class="search-top-body-content input-group mb-3">
+                            <div class="input-group-prepend">
+                                <button onclick="searchByInput()" class="input-group-text" id="basic-addon1">
+                    <img src="img/search.svg" class="img-search" />
+                  </button>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Item..." aria-label="Username" aria-describedby="basic-addon1" id="input-search" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END TOP -->
+            <!-- PHOTOS BODY PART -->
+
+            <div class="container img-content-body">
+                <div class="grid">
+                    <div class="store_itens nature" data-item="nature">
+                        <div class="img-container">
+                            <img src="img/nature-clairview.jpg" alt="itens" class="img-nature img-content-itens hover-shadow" />
+                        </div>
+                        <div class="card-body text-img-body">
+                            <h5 id="store-item-name">nature</h5>
+                            <h5 id="store-item-value">$ <strong>5</strong></h5>
+                        </div>
+                    </div>
+                    <div class="store_itens portrait" data-item="portrait">
+                        <div class="img-container">
+                            <img src="img/portrait-bird.jpg" alt="itens" class="img-portrait img-content-itens hover-shadow" />
+                        </div>
+                        <div class="card-body text-img-body">
+                            <h5 id="store-item-name">portrait</h5>
+                            <h5 id="store-item-value">$ <strong>15</strong></h5>
+                        </div>
+                    </div>
+                    <div class="store_itens street" data-item="street">
+                        <div class="img-container">
+                            <img src="img/street-opera.jpg" alt="itens" class="img-street img-content-itens hover-shadow" />
+                        </div>
+                        <div class="card-body text-img-body">
+                            <h5 id="store-item-name">street</h5>
+                            <h5 id="store-item-value">$ <strong>10</strong></h5>
+                        </div>
+                    </div>
+                    <div class="store_itens event" data-item="event">
+                        <div class="img-container">
+                            <img src="img/event-ring-married.jpg" alt="itens" class="img-event img-content-itens hover-shadow" />
+                        </div>
+                        <div class="card-body text-img-body">
+                            <h5 id="store-item-name">event</h5>
+                            <h5 id="store-item-value">$ <strong>30</strong></h5>
+                        </div>
+                    </div>
+                    <div class="store_itens nature" data-item="nature">
+                        <div class="img-container">
+                            <img src="img/nature-flower.jpg" alt="itens" class="img-nature img-content-itens hover-shadow" />
+                        </div>
+                        <div class="card-body text-img-body">
+                            <h5 id="store-item-name">nature</h5>
+                            <h5 id="store-item-value">$ <strong>5</strong></h5>
+                        </div>
+                    </div>
+                    <div class="store_itens portrait" data-item="portrait">
+                        <div class="img-container">
+                            <img src="img/portrait-siluet.jpg" alt="itens" class="img-portrait img-content-itens hover-shadow" />
+                        </div>
+                        <div class="card-body text-img-body">
+                            <h5 id="store-item-name">portrait</h5>
+                            <h5 id="store-item-value">$ <strong>15</strong></h5>
+                        </div>
+                    </div>
+                    <div class="store_itens street" data-item="street">
+                        <div class="img-container">
+                            <img src="img/street-luna-opera-harbour.jpg" alt="itens" class="img-street img-content-itens hover-shadow" />
+                        </div>
+                        <div class="card-body text-img-body">
+                            <h5 id="store-item-name">street</h5>
+                            <h5 id="store-item-value">$ <strong>10</strong></h5>
+                        </div>
+                    </div>
+                    <div class="store_itens event" data-item="event">
+                        <div class="img-container">
+                            <img src="img/event-food-eve.jpg" alt="itens" class="img-event img-content-itens hover-shadow" />
+                        </div>
+                        <div class="card-body text-img-body">
+                            <h5 id="store-item-name">event</h5>
+                            <h5 id="store-item-value">$ <strong>30</strong></h5>
+                        </div>
+                    </div>
+                    <div class="store_itens nature" data-item="nature">
+                        <div class="img-container">
+                            <img src="img/nature-jervis-bay.jpg" alt="itens" class="img-nature img-content-itens hover-shadow" />
+                        </div>
+                        <div class="card-body text-img-body">
+                            <h5 id="store-item-name">nature</h5>
+                            <h5 id="store-item-value">$ <strong>5</strong></h5>
+                        </div>
+                    </div>
+                    <div class="store_itens portrait" data-item="portrait">
+                        <div class="img-container">
+                            <img src="img/portrait-candle.jpg" alt="itens" class="img-portrait img-content-itens hover-shadow" />
+                        </div>
+                        <div class="card-body text-img-body">
+                            <h5 id="store-item-name">portrait</h5>
+                            <h5 id="store-item-value">$ <strong>15</strong></h5>
+                        </div>
+                    </div>
+                    <div class="store_itens street" data-item="street">
+                        <div class="img-container">
+                            <img src="img/street-train.jpg" alt="itens" class="img-street img-content-itens hover-shadow" />
+                        </div>
+                        <div class="card-body text-img-body">
+                            <h5 id="store-item-name">street</h5>
+                            <h5 id="store-item-value">$ <strong>10</strong></h5>
+                        </div>
+                    </div>
+                    <div class="store_itens event" data-item="event">
+                        <div class="img-container">
+                            <img src="img/event-bb-shower.jpg" alt="itens" class="img-event img-content-itens hover-shadow" />
+                        </div>
+                        <div class="card-body text-img-body">
+                            <h5 id="store-item-name">event</h5>
+                            <h5 id="store-item-value">$ <strong>30</strong></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- PHOTOS BODY PART -->
+        <!-- END CONTENT -->
+        <!-- to include another page -->
+        <!-- <iframe src="test.html" name="targetframe" allowTransparency="true" scrolling="no" frameborder="0"></iframe> -->
+    </div>
+</body>
+<!-- icons -->
+<link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet" />
+<link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet" />
+<link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet" />
+<!-- javaScript -->
+<script src="app.js"></script>
+<!-- bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</html>
